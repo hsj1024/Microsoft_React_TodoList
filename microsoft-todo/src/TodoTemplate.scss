@@ -1,0 +1,24 @@
+.TodoTemplate {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+    background: #f4f4f4;
+  
+    .app-title {
+      background: #0078d4;
+      color: white;
+      padding: 1rem;
+      font-size: 1.5rem;
+      text-align: center;
+      border-radius: 4px 4px 0 0;
+    }
+  
+    .content {
+      flex: 1;
+      background: white;
+      padding: 1rem;
+      border-radius: 0 0 4px 4px;
+    }
+  }
+  
