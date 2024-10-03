@@ -1,5 +1,25 @@
 .App {
-    display: flex;
-    height: 100vh;
-  }
-  
+  display: flex;
+  flex-direction: row; /* Sidebar와 TodoTemplate을 나란히 배치 */
+  height: 100vh;
+  align-items: flex-start; /* 상단 정렬 */
+  padding: 0; /* 여백 제거 */
+}
+
+.sidebar {
+  width: 250px;
+  background-color: #f3f4f6;
+  padding: 20px;
+  box-sizing: border-box; /* 패딩 포함해서 크기 계산 */
+  gap:10px;
+}
+
+.todo-section {
+  flex: 1;
+  display: flex;
+  padding: 20px;
+  margin : 0 auto;
+  justify-content: center;
+  align-items: flex-start; /* 상단 정렬 */
+
+}

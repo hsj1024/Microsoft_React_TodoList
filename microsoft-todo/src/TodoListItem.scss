@@ -1,54 +1,89 @@
-.TodoListItem {
-    padding: 1rem;
+// .TodoListItem {
+//     padding: 1rem;
+//     display: flex;
+//     align-items: center;
+//     border-bottom: 1px solid #dee2e6;
+  
+//     &:nth-child(even) {
+//       background: #f8f9fa;
+//     }
+  
+//     .checkbox {
+//       cursor: pointer;
+//       display: flex;
+//       align-items: center;
+//       flex: 1;
+  
+//       svg {
+//         font-size: 1.5rem;
+//         color: #adb5bd;
+//       }
+  
+//       .text {
+//         margin-left: 0.5rem;
+//         flex: 1;
+//         font-size: 1rem;
+//         line-height: 1.5;
+//         color: #495057;
+  
+//         &.checked {
+//           color: #ced4da;
+//           text-decoration: line-through;
+//         }
+//       }
+  
+//       &.checked {
+//         svg {
+//           color: #0078d4;
+//         }
+//       }
+//     }
+  
+//     .remove {
+//       display: flex;
+//       align-items: center;
+//       font-size: 1.5rem;
+//       color: #ff6b6b;
+//       cursor: pointer;
+  
+//       &:hover {
+//         color: #ff8787;
+//       }
+//     }
+//   }
+.todo-list-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px;
+  background-color: white;
+  border-bottom: 1px solid #e5e7eb;
+  transition: background-color 0.2s ease;
+
+  &:hover {
+    background-color: #f9fafb;
+  }
+
+  .checkbox {
     display: flex;
     align-items: center;
-    border-bottom: 1px solid #dee2e6;
-  
-    &:nth-child(even) {
-      background: #f8f9fa;
-    }
-  
-    .checkbox {
-      cursor: pointer;
-      display: flex;
-      align-items: center;
-      flex: 1;
-  
-      svg {
-        font-size: 1.5rem;
-        color: #adb5bd;
-      }
-  
+    cursor: pointer;
+
+    &.checked {
       .text {
-        margin-left: 0.5rem;
-        flex: 1;
-        font-size: 1rem;
-        line-height: 1.5;
-        color: #495057;
-  
-        &.checked {
-          color: #ced4da;
-          text-decoration: line-through;
-        }
-      }
-  
-      &.checked {
-        svg {
-          color: #0078d4;
-        }
-      }
-    }
-  
-    .remove {
-      display: flex;
-      align-items: center;
-      font-size: 1.5rem;
-      color: #ff6b6b;
-      cursor: pointer;
-  
-      &:hover {
-        color: #ff8787;
+        text-decoration: line-through;
+        color: #6b7280;
       }
     }
   }
-  
+
+  .remove {
+    color: red;
+    cursor: pointer;
+    transition: color 0.2s ease;
+
+    &:hover {
+      color: #ef4444;
+    }
+  }
+}

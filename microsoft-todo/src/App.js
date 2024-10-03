@@ -40,12 +40,19 @@ function App() {
   };
 
   return (
+    
     <div className="App">
+      <div className="sidebar">
       <Sidebar />
-      <TodoTemplate>
-        <TodoInsert onInsert={onInsert} />
-        <TodoList todos={todos} onToggle={onToggle} onRemove={onRemove} />
-      </TodoTemplate>
+
+      </div>
+      <div className="todo-section">
+
+        <TodoTemplate>
+          <TodoInsert onInsert={onInsert} />
+          <TodoList todos={todos} onToggle={onToggle} onRemove={onRemove} />
+        </TodoTemplate>
+      </div>
     </div>
   );
 }

@@ -1,37 +1,92 @@
-.Sidebar {
-    width: 250px;
-    background: #f8f9fa;
-    display: flex;
-    flex-direction: column;
-    padding: 1rem;
+// .Sidebar {
+//     width: 250px;
+//     background: #f8f9fa;
+//     display: flex;
+//     flex-direction: column;
+//     padding: 1rem;
   
-    .logo {
-      font-size: 1.5rem;
-      font-weight: bold;
-      margin-bottom: 2rem;
-    }
+//     .logo {
+//       font-size: 1.5rem;
+//       font-weight: bold;
+//       margin-bottom: 2rem;
+//     }
   
-    .menu {
-      flex: 1;
+//     .menu {
+//       flex: 1;
   
-      .menu-item {
-        padding: 0.5rem 0;
-        cursor: pointer;
+//       .menu-item {
+//         padding: 0.5rem 0;
+//         cursor: pointer;
   
-        &:hover {
-          background: #e1e1e1;
-        }
-      }
-    }
+//         &:hover {
+//           background: #e1e1e1;
+//         }
+//       }
+//     }
   
-    .new-list {
-      padding: 0.5rem 0;
-      color: #0078d4;
+//     .new-list {
+//       padding: 0.5rem 0;
+//       color: #0078d4;
+//       cursor: pointer;
+  
+//       &:hover {
+//         color: #005bb5;
+//       }
+//     }
+//   }
+.sidebar {
+  background-color: #f3f4f6;
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start; /* 아이템을 왼쪽으로 정렬 */
+
+  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1); // 그림자 추가
+  border-radius: 10px;
+  height: 900px;
+
+  .logo {
+    font-size: 24px;
+    margin-top:-10px;
+    font-weight: bold;
+    margin-bottom: 30px;
+  }
+
+  .menu {
+    list-style: none;
+    padding: 0;
+    margin-top:50px;
+    margin-right:40px;
+  }
+  .menu.ul{
+    margin-left:0px;
+  }
+    .menu-item {
+      text-align: left; /* 텍스트를 왼쪽 정렬 */
+      margin-left: -50px; /* 리스트 항목의 기본 마진 제거 */
+
+      font-size: 18px;
+      padding: 20px 0;
       cursor: pointer;
-  
+      color: #333;
       &:hover {
-        color: #005bb5;
+        background-color: #e5e7eb;
+        border-radius: 5px;
+        padding-left: 10px;
       }
+    }
+  .menu-item.li{
+    margin-left:0px;
+  }
+
+  .new-list {
+    font-size: 18px;
+    color: #2563eb;
+    cursor: pointer;
+    font-weight: bold;
+    margin-top: 30px;
+    &:hover {
+      color: #1d4ed8;
     }
   }
-  
+}
